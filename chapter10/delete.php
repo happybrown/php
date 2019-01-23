@@ -4,7 +4,7 @@
 ?>
 <HTML>
 <FORM METHOD="POST" 
-ACTION="<?php=$_SERVER['PHP_SELF']?>?id=<?php=$_GET[id]?>&mode=delete">
+ACTION="<?php echo $_SERVER['PHP_SELF']?>?id=<?php echo $_GET[id]?>&mode=delete">
 <TABLE>
 	<TR>
 		<TD>비밀번호</TD>

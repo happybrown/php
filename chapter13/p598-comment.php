@@ -21,7 +21,7 @@
 <table width=98% align=center border=0 cellpadding=5 cellspacing=0>
 <form name=comment_insert method=post action='comment_insert.php'
 onsubmit="return CommentFormCheck()">
-<input type=hidden name=bid value='<?php=$_GET[id]?>'>
+<input type=hidden name=bid value='<?php echo $_GET[id]?>'>
 <tr bgcolor=#CCCCCC><td colspan=4></td></tr>
 <tr bgcolor=#F0F0F0>
 	<td width=50 align=center>이름</td>

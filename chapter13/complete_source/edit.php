@@ -58,7 +58,7 @@ A:hover { text-decoration : underline; color : black; font-size : 9pt; }
 <BR>
 
 <!-- 입력된 값을 다음 페이지로 넘기기 위해 FORM을 만든다. -->
-<form action=update.php?id=<?php=$id?> method=post name=fm onsubmit="return FormCheck()" enctype="multipart/form-data">
+<form action=update.php?id=<?php echo $id?> method=post name=fm onsubmit="return FormCheck()" enctype="multipart/form-data">
 
 <table width=580 border=0 cellpadding=2 cellspacing=1 bgcolor=#777777>
 <tr>
@@ -73,13 +73,13 @@ A:hover { text-decoration : underline; color : black; font-size : 9pt; }
 		<tr>
 			<td width=60 align=left >이름</td>
 			<td align=left >
-			<INPUT type=text name=name size=20 maxlength=10 value="<?php=$row[name]?>">
+			<INPUT type=text name=name size=20 maxlength=10 value="<?php echo $row[name]?>">
 			</td>
 		</tr>
 		<tr>
 			<td width=60 align=left >이메일</td>
 			<td align=left >
-			<INPUT type=text name=email size=20 maxlength=25 value="<?php=$row[email]?>">
+			<INPUT type=text name=email size=20 maxlength=25 value="<?php echo $row[email]?>">
 			</td>
 		</tr>
 		<tr>
@@ -91,13 +91,13 @@ A:hover { text-decoration : underline; color : black; font-size : 9pt; }
 		<tr>
 			<td width=60 align=left >제 목</td>
 			<td align=left >
-			<INPUT type=text name=title size=60 maxlength=35 value="<?php=$row[title]?>">
+			<INPUT type=text name=title size=60 maxlength=35 value="<?php echo $row[title]?>">
 			</td>
 		</tr>
 		<tr>
 			<td width=60 align=left >내용</td>
 			<td align=left >
-			<TEXTAREA name=content cols=65 rows=15><?php=$row[content]?></TEXTAREA>
+			<TEXTAREA name=content cols=65 rows=15><?php echo $row[content]?></TEXTAREA>
 			</td>
 		</tr>
 		<tr>

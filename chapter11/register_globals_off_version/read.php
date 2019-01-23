@@ -30,26 +30,26 @@ font-size : 9pt;}
 bgcolor=#777777>
 <tr>
 	<td height=20 colspan=4 align=center bgcolor=#999999>
-		<font color=white><B><?php=$row[title]?></B></font>
+		<font color=white><B><?php echo $row[title]?></B></font>
 	</td>
 </tr>
 <tr>
 	<td width=50 height=20 align=center bgcolor=#EEEEEE>글쓴이</td>
-	<td	width=240 bgcolor=white><?php=$row[name]?></td>
+	<td	width=240 bgcolor=white><?php echo $row[name]?></td>
 	<td width=50 height=20 align=center bgcolor=#EEEEEE>이메일</td>
-	<td	width=240 bgcolor=white><?php=$row[email]?></td>
+	<td	width=240 bgcolor=white><?php echo $row[email]?></td>
 </tr>
 <tr>
 	<td width=50 height=20 align=center bgcolor=#EEEEEE>
 	날&nbsp;&nbsp;&nbsp;짜</td><td width=240
-	bgcolor=white><?php=$row[wdate]?></td>
+	bgcolor=white><?php echo $row[wdate]?></td>
 	<td width=50 height=20 align=center bgcolor=#EEEEEE>조회수</td>
-	<td	width=240 bgcolor=white><?php=$row[view]?></td>
+	<td	width=240 bgcolor=white><?php echo $row[view]?></td>
 </tr>
 <tr>
 	<td bgcolor=white colspan=4>
 	<font color=black>
-	<pre><?php=$row[content]?></pre>
+	<pre><?php echo $row[content]?></pre>
 	</font>
 	</td>
 </tr>
@@ -59,13 +59,13 @@ bgcolor=#777777>
 	<table width=100%>
 		<tr>
 			<td width=200 align=left height=20>
-				<a href=list.php?no=<?php=$no?>><font color=white>
+				<a href=list.php?no=<?php echo $no?>><font color=white>
 				[목록보기]</font></a>
 				<a href=write.php><font color=white>
 				[글쓰기]</font></a>
-				<a href=edit.php?id=<?php=$id?>><font color=white>
+				<a href=edit.php?id=<?php echo $id?>><font color=white>
 				[수정]</font></a>
-				<a href=predel.php?id=<?php=$id?>>
+				<a href=predel.php?id=<?php echo $id?>>
 				<font color=white>[삭제]</font></a>
 			</td>
 			<!-- 기타 버튼 끝 -->

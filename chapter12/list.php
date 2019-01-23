@@ -110,8 +110,8 @@ font-size : 9pt;}
 <tr>
 	<!-- 번호 -->
 	<td height=20 bgcolor=white align=center>
-		<a href="read.php?id=<?php=$row[id]?>&no=<?php=$no?>">
-		<?php=$row[id]?></a>
+		<a href="read.php?id=<?php echo $row[id]?>&no=<?php echo $no?>">
+		<?php echo $row[id]?></a>
 	</td>
 	<!-- 번호 끝 -->
 	<!-- 제목 -->
@@ -120,25 +120,25 @@ font-size : 9pt;}
 		if ($row[depth] > 0) 
 			echo "<img height=1 width=" . $row[depth]*7 . ">└";
 		?>
-		<a href="read.php?id=<?php=$row[id]?>&no=<?php=$no?>">
-		<?php=strip_tags($row[title]);?></a>
+		<a href="read.php?id=<?php echo $row[id]?>&no=<?php echo $no?>">
+		<?php echo strip_tags($row[title]);?></a>
 	</td>
 	<!-- 제목 끝 -->
 	<!-- 이름 -->
 	<td align=center height=20 bgcolor=white>
 		<font color=black>
-		<a href="mailto:<?php=$row[email]?>"><?php=$row[name]?></a>
+		<a href="mailto:<?php echo $row[email]?>"><?php echo $row[name]?></a>
 		</font>
 	</td>
 	<!-- 이름 끝 -->
 	<!-- 날짜 -->
 	<td align=center height=20 bgcolor=white>
-		<font color=black><?php=date("Y-m-d",$row[wdate])?></font>
+		<font color=black><?php echo date("Y-m-d",$row[wdate])?></font>
 	</td>
 	<!-- 날짜 끝 -->
 	<!-- 조회수 -->
 	<td align=center height=20 bgcolor=white>
-		<font color=black><?php=$row[view]?></font>
+		<font color=black><?php echo $row[view]?></font>
 	</td>
 <!-- 조회수 끝 -->
 </tr>

@@ -22,4 +22,4 @@ else
 	ErrorMessage('비밀번호가 틀립니다.');
 }
 ?>
-<meta http-equiv='Refresh' content='0; URL=read.php?id=<?php=$_GET[bid]?>'>
+<meta http-equiv='Refresh' content='0; URL=read.php?id=<?php echo $_GET[bid]?>'>

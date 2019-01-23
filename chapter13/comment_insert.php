@@ -16,5 +16,5 @@
 	$result = mysql_query($query, $conn) 
 	or ErrorMessage('덧글을 저장하는데 실패하였습니다.');
 ?>
-<meta http-equiv='Refresh' content='1; URL=read.php?id=<?php=$_GET[id]?>'>
+<meta http-equiv='Refresh' content='1; URL=read.php?id=<?php echo $_GET[id]?>'>
 <center>덧글이 등록되었습니다.</center>

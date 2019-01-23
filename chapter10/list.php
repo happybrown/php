@@ -35,13 +35,13 @@
 ?>
 <TABLE WIDTH=500 BORDER=1>
 	<TR>
-		<TD>No. <?php=$row[id]?></TD>
-		<TD><?php=$row[name]?></TD>
-		<TD>(<?php=$row[wdate]?>)</TD>
-		<TD><a href="delete.php?id=<?php=$row[id]?>">del</a></TD>
+		<TD>No. <?php echo $row[id]?></TD>
+		<TD><?php echo $row[name]?></TD>
+		<TD>(<?php echo $row[wdate]?>)</TD>
+		<TD><a href="delete.php?id=<?php echo $row[id]?>">del</a></TD>
 	</TR>
 	<TR>
-		<TD COLSPAN=4><?php=$row[content]?></TD>
+		<TD COLSPAN=4><?php echo $row[content]?></TD>
 	</TR>
 </TABLE>
 <?php

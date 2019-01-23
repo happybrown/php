@@ -13,18 +13,18 @@ while($row_cmt=mysql_fetch_array($result_cmt)) {
 <table width=98% border=0 align=center cellpadding=5 cellspacing=0>
 <tr bgcolor=#CCCCCC><td colspan=2></td></tr>
 <tr bgcolor=#F0F0F0>
-	<td width=50% id="name_<?php=$row_cmt[id]?>"><?php=$row_cmt[name]?></td>
+	<td width=50% id="name_<?php echo $row_cmt[id]?>"><?php echo $row_cmt[name]?></td>
 	<td align=right style="font-size:8pt">
-		<a href="javascript:change_form(<?php=$row_cmt[id]?>);"
+		<a href="javascript:change_form(<?php echo $row_cmt[id]?>);"
 		style="font-size:8pt;color:#999999">[수정]</a>
-		<a href="comment_predel.php?id=<?php=$row_cmt[id]?>&bid=<?php=$id?>" 
+		<a href="comment_predel.php?id=<?php echo $row_cmt[id]?>&bid=<?php echo $id?>" 
 		style="font-size:8pt;color:#999999">[삭제]</a>
-		<?php=$row_cmt[wdate]?>
+		<?php echo $row_cmt[wdate]?>
 	</td>
 </tr>
 <tr>
-<td valign=top colspan=2 id="comment_<?php=$row_cmt[id]?>">
-<?php=$comment?><BR><BR></td>
+<td valign=top colspan=2 id="comment_<?php echo $row_cmt[id]?>">
+<?php echo $comment?><BR><BR></td>
 </tr>
 </table>
 <?php } ?>
@@ -73,7 +73,7 @@ function CommentFormCheck() {
 <form name=comment_insert method=post action='comment_insert.php'
 onsubmit="return CommentFormCheck()">
 <input type=hidden name=id value=''>
-<input type=hidden name=bid value='<?php=$id?>'>
+<input type=hidden name=bid value='<?php echo $id?>'>
 <tr bgcolor=#CCCCCC><td colspan=4></td></tr>
 <tr bgcolor=#F0F0F0>
 	<td width=50 align=center>이름</td><td width=100>

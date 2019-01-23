@@ -61,5 +61,5 @@ function check_response($data)
 }
 ?>
 
-안녕하세요. <?php=$data['username']?>님<BR>
-<a href='<?php=$_SERVER['PHP_SELF']?>?logout=1'>로그아웃</a>
+안녕하세요. <?php echo $data['username']?>님<BR>
+<a href='<?php echo $_SERVER['PHP_SELF']?>?logout=1'>로그아웃</a>

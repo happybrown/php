@@ -34,16 +34,16 @@ A:hover { text-decoration : underline; color : black; font-size : 9pt; }
 <table width=600 border=0 cellpadding=2 cellspacing=1 bgcolor=#777777 style="table-layout:fixed;">
 <tr>
 <td height=20 colspan=4 align=center bgcolor=#999999>
-<font color=white><B><?php=remove_html($row[title]);?></B></font>
+<font color=white><B><?php echo remove_html($row[title]);?></B></font>
 </td>
 </tr>
 <tr>
-<td width=50 height=20 align=center bgcolor=#EEEEEE>글쓴이</td><td width=240 bgcolor=white><?php=$row[name]?></td>
-<td width=50 height=20 align=center bgcolor=#EEEEEE>이메일</td><td width=240 bgcolor=white><?php=$row[email]?></td>
+<td width=50 height=20 align=center bgcolor=#EEEEEE>글쓴이</td><td width=240 bgcolor=white><?php echo $row[name]?></td>
+<td width=50 height=20 align=center bgcolor=#EEEEEE>이메일</td><td width=240 bgcolor=white><?php echo $row[email]?></td>
 </tr>
 <tr>
-<td width=50 height=20 align=center bgcolor=#EEEEEE>날&nbsp;&nbsp;&nbsp;짜</td><td width=240 bgcolor=white><?php=date("Y-m-d",$row[wdate])?></td>
-<td width=50 height=20 align=center bgcolor=#EEEEEE>조회수</td><td width=240 bgcolor=white><?php=$row[view]?></td>
+<td width=50 height=20 align=center bgcolor=#EEEEEE>날&nbsp;&nbsp;&nbsp;짜</td><td width=240 bgcolor=white><?php echo date("Y-m-d",$row[wdate])?></td>
+<td width=50 height=20 align=center bgcolor=#EEEEEE>조회수</td><td width=240 bgcolor=white><?php echo $row[view]?></td>
 </tr>
 <tr>
 <td bgcolor=white colspan=4 style="word-break:break-all;">
@@ -54,7 +54,7 @@ A:hover { text-decoration : underline; color : black; font-size : 9pt; }
 		echo "첨부된 파일 : <a href='uploads_dir/$row[filename]'>$row[filename]</a><BR><BR>";
 	}
 ?>
-<?php=nl2br(str_replace(" ", "&nbsp;", remove_html($row[content])));?>
+<?php echo nl2br(str_replace(" ", "&nbsp;", remove_html($row[content])));?>
 </font>
         <BR><BR>
         <?php include "comment.php"; ?>
@@ -67,11 +67,11 @@ A:hover { text-decoration : underline; color : black; font-size : 9pt; }
 <table width=100%>
 <tr>
 <td width=280 align=left height=20>
-<a href=list.php?no=<?php=$no?>><font color=white>[목록보기]</font></a>
-<a href=reply.php?id=<?php=$id?>><font color=white>[답글달기]</font></a>
+<a href=list.php?no=<?php echo $no?>><font color=white>[목록보기]</font></a>
+<a href=reply.php?id=<?php echo $id?>><font color=white>[답글달기]</font></a>
 <a href=write.php><font color=white>[글쓰기]</font></a>
-<a href=edit.php?id=<?php=$id?>><font color=white>[수정]</font></a>
-<a href=predel.php?id=<?php=$id?>><font color=white>[삭제]</font></a>
+<a href=edit.php?id=<?php echo $id?>><font color=white>[수정]</font></a>
+<a href=predel.php?id=<?php echo $id?>><font color=white>[삭제]</font></a>
 </td>
 </tr>
 </table>
@@ -147,31 +147,31 @@ while($row=mysql_fetch_array($result))
 <tr>
 <!-- 번호 -->
 <td height=20 bgcolor=white align=center>
-<a href=read.php?id=<?php=$row[id]?>&no=<?php=$no?>><?php=$row[id]?></a>
+<a href=read.php?id=<?php echo $row[id]?>&no=<?php echo $no?>><?php echo $row[id]?></a>
 </td>
 <!-- 번호 끝 -->
 <!-- 제목 -->
 <td height=20 bgcolor=white>&nbsp;
 <?php //depth 값을 통해서 들여쓰기를 한다. 투명이미지의 가로사이즈를 늘이는 방법
 if ($row[depth] > 0) echo "<img src=img/dot.gif height=1 width=" . $row[depth]*7 . ">└";
-?><a href=read.php?id=<?php=$row[id]?>&no=<?php=$no?>><?php=remove_html($row[title]);?></a>
+?><a href=read.php?id=<?php echo $row[id]?>&no=<?php echo $no?>><?php echo remove_html($row[title]);?></a>
 </td>
 <!-- 제목 끝 -->
 <!-- 이름 -->
 <td align=center height=20 bgcolor=white>
 <font color=black>
-<a href="mailto:<?php=$row[email]?>"><?php=$row[name]?></a>
+<a href="mailto:<?php echo $row[email]?>"><?php echo $row[name]?></a>
 </font>
 </td>
 <!-- 이름 끝 -->
 <!-- 날짜 -->
 <td align=center height=20 bgcolor=white>
-<font color=black><?php=date("Y-m-d",$row[wdate])?></font>
+<font color=black><?php echo date("Y-m-d",$row[wdate])?></font>
 </td>
 <!-- 날짜 끝 -->
 <!-- 조회수 -->
 <td align=center height=20 bgcolor=white>
-<font color=black><?php=$row[view]?></font>
+<font color=black><?php echo $row[view]?></font>
 </td>
 <!-- 조회수 끝 -->
 </tr>

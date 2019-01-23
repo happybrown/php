@@ -28,7 +28,7 @@ function FormCheck() {
 <center>
 <BR>
 <!-- 입력된 값을 다음 페이지로 넘기기 위해 FORM을 만든다. -->
-<form action="comment_del.php?id=<?php=$_GET[id]?>&bid=<?php=$_GET[bid]?>" 
+<form action="comment_del.php?id=<?php echo $_GET[id]?>&bid=<?php echo $_GET[bid]?>" 
 method=post name=fm onsubmit="return FormCheck()">
 <table width=300 border=0 cellpadding=2 cellspacing=1
 bgcolor=#777777>

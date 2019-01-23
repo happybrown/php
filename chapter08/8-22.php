@@ -5,4 +5,4 @@
 	}
 ?>
 성공적으로 로그인 하였습니다.<BR>
-접속된 아이디는 <?php=$_COOKIE[userid]?>입니다.
+접속된 아이디는 <?php echo $_COOKIE[userid]?>입니다.
