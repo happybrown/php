@@ -1,10 +1,10 @@
-<?
+<?php
 	$today = getdate();
 	
 	foreach ($today as $key => $value) {
 		echo $key . " : " . $value . "<BR>";
 	}
 
-	echo "¿À´ÃÀº " . $today[year] . "³â " . $today[mon] . "¿ù "
-	. $today[mday] . "ÀÏ ÀÔ´Ï´Ù.";
+	echo "ì˜¤ëŠ˜ì€ " . $today[year] . "ë…„ " . $today[mon] . "ì›” "
+	. $today[mday] . "ì¼ ìž…ë‹ˆë‹¤.";
 ?>

@@ -1,4 +1,4 @@
-<?
+<?php
 	function return_array()
 	{
 		return array(0, 1, 2);

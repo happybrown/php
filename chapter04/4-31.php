@@ -1,21 +1,21 @@
-<?
+<?php
 	$filename = "/var/www/temp/readfile.txt";
 
-	//Çì´õ Á¤º¸¸¦ º¯°æÇÑ´Ù.
+	//í—¤ë” ì •ë³´ë¥¼ ë³€ê²½í•œë‹¤.
 	header("Pragma: public");
 	header("Expires: 0");
 	header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
 	header('Content-Description: File Transfer');
 
-	//ÆÄÀÏÀÇ Çü½ÄÀ» º¯°æ
+	//íŒŒì¼ì˜ í˜•ì‹ì„ ë³€ê²½
 	header('Content-Type: application/octet-stream');
 
-	//ÆÄÀÏÀÇ Å©±â
+	//íŒŒì¼ì˜ í¬ê¸°
 	header('Content-Length: ' . filesize($filename));
 
-	//ÆÄÀÏ ÀÌ¸§
+	//íŒŒì¼ ì´ë¦„
 	header('Content-Disposition: attachment; filename=' 
 	. basename($filename));
-	//ÆÄÀÏÀ» Ãâ·Â
+	//íŒŒì¼ì„ ì¶œë ¥
 	@readfile($filename);
 ?>

@@ -1,4 +1,4 @@
-<?
+<?php
 	$arr = array( array(100,100,80),
 				  array(90,100,90),
 				  array(80,80,100)

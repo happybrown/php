@@ -1,4 +1,4 @@
-<?
+<?php
 //데이터 베이스 연결하기
 include "db_info.php";
 
@@ -102,7 +102,7 @@ font-size : 9pt;}
 </tr>
 <!-- 리스트 타이틀 끝 -->
 <!-- 리스트 부분 시작 -->
-<?
+<?php
 	while($row=mysql_fetch_array($result))
 	{
 ?>
@@ -110,40 +110,40 @@ font-size : 9pt;}
 <tr>
 	<!-- 번호 -->
 	<td height=20 bgcolor=white align=center>
-		<a href="read.php?id=<?=$row[id]?>&no=<?=$no?>">
-		<?=$row[id]?></a>
+		<a href="read.php?id=<?php=$row[id]?>&no=<?php=$no?>">
+		<?php=$row[id]?></a>
 	</td>
 	<!-- 번호 끝 -->
 	<!-- 제목 -->
 	<td height=20 bgcolor=white>&nbsp;
-		<? 
+		<?php 
 		if ($row[depth] > 0) 
 			echo "<img height=1 width=" . $row[depth]*7 . ">└";
 		?>
-		<a href="read.php?id=<?=$row[id]?>&no=<?=$no?>">
-		<?=strip_tags($row[title]);?></a>
+		<a href="read.php?id=<?php=$row[id]?>&no=<?php=$no?>">
+		<?php=strip_tags($row[title]);?></a>
 	</td>
 	<!-- 제목 끝 -->
 	<!-- 이름 -->
 	<td align=center height=20 bgcolor=white>
 		<font color=black>
-		<a href="mailto:<?=$row[email]?>"><?=$row[name]?></a>
+		<a href="mailto:<?php=$row[email]?>"><?php=$row[name]?></a>
 		</font>
 	</td>
 	<!-- 이름 끝 -->
 	<!-- 날짜 -->
 	<td align=center height=20 bgcolor=white>
-		<font color=black><?=date("Y-m-d",$row[wdate])?></font>
+		<font color=black><?php=date("Y-m-d",$row[wdate])?></font>
 	</td>
 	<!-- 날짜 끝 -->
 	<!-- 조회수 -->
 	<td align=center height=20 bgcolor=white>
-		<font color=black><?=$row[view]?></font>
+		<font color=black><?php=$row[view]?></font>
 	</td>
 <!-- 조회수 끝 -->
 </tr>
 <!-- 행 끝 -->
-<?
+<?php
 	} // end While
 
 //데이터베이스와의 연결을 끝는다.
@@ -157,7 +157,7 @@ mysql_close($conn);
 	<td width=600 height=20 align=center rowspan=4>
 	<font color=gray>
 	&nbsp;
-<?
+<?php
 ###################################################################
 # 페이지 리스트
 # 페이지 리스트의 첫번째로 표시될 페이지가 몇번째 페이지인지 구하는 부분이다.

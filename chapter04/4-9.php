@@ -1,7 +1,7 @@
-<?
-	// 7 ÀÏ; 24 ½Ã°£; 60 ºĞ; 60 ÃÊ
+<?php
+	// 7 ì¼; 24 ì‹œê°„; 60 ë¶„; 60 ì´ˆ
 	$next_week = time() + (7 * 24 * 60 * 60);
 
-	echo '¿À´Ã : ' . date('Y-m-d') . "<BR>";
-	echo '´ÙÀ½ ÁÖ : ' . date('Y-m-d', $next_week);
+	echo 'ì˜¤ëŠ˜ : ' . date('Y-m-d') . "<BR>";
+	echo 'ë‹¤ìŒ ì£¼ : ' . date('Y-m-d', $next_week);
 ?>

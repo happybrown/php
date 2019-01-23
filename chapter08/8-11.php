@@ -1,4 +1,4 @@
-<?
+<?php
 	$txt = '
 	username="brown",
 	realm="ezphp.net",

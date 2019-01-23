@@ -1,4 +1,4 @@
-<?
+<?php
 	function &func()
 	{
 		static $static = 0;

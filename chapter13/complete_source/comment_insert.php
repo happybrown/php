@@ -1,4 +1,4 @@
-<?
+<?php
 include_once "library.php";
 
 $_POST[bid] = (int)$_POST[bid];
@@ -16,4 +16,4 @@ $query .= " VALUES ('{$_POST[bid]}','{$_POST[name]}','{$_POST[pass]}','{$_POST[c
 $result = mysql_query($query, $conn) or ErrorMessage('덧글을 저장하는데 실패하였습니다.');
 ?>
 
-<meta http-equiv='Refresh' content='0; URL=read.php?id=<?=$_POST[bid]?>'>
+<meta http-equiv='Refresh' content='0; URL=read.php?id=<?php=$_POST[bid]?>'>

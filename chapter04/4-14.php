@@ -1,4 +1,4 @@
-<?
+<?php
 	$fd = fopen ("somefile.txt", "r");
 
 	while (!feof($fd)) {

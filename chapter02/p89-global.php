@@ -1,4 +1,4 @@
-<?
+<?php
 	$a = 1; //전국구 쌍칼
 	function Busan()
 	{

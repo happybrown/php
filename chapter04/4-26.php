@@ -1,9 +1,8 @@
-<?
+<?php
 	$filename = "somefile.txt";
-
 	if (is_file($filename)) {
-		echo "$filename Àº ÆÄÀÏ ÀÔ´Ï´Ù.";
+		echo "$filename ì€ íŒŒì¼ ìž…ë‹ˆë‹¤.";
 	} else {
-		echo "$filename Àº ÆÄÀÏÀÌ ¾Æ´Ï°Å³ª Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.";
+		echo "$filename ì€ íŒŒì¼ì´ ì•„ë‹ˆê±°ë‚˜ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.";
 	}
 ?>

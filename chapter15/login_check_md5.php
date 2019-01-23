@@ -1,4 +1,4 @@
-<?
+<?php
 	function check_sid() {
 		$get_userid = $_COOKIE['userid'];
 		$get_sid = $_COOKIE['sid'];

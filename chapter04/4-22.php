@@ -1,4 +1,4 @@
-<?
+<?php
 	$name = 'zend.png';
 	$fp = fopen($name, 'rb');
 

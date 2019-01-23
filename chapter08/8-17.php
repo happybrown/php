@@ -1,4 +1,4 @@
-<?
+<?php
 	$user = array(
 		"brown"=>"brown1234",
 		"admin"=>"admin1234",

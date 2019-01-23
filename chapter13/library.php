@@ -1,4 +1,4 @@
-<?
+<?php
 function ErrorMessage($message, $type = "on")
 {
 	echo "<script> alert('$message'); ";

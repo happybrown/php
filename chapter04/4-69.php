@@ -1,5 +1,5 @@
-<?
-	$arr = array('brown','ºê¶ó¿î');
+<?php
+	$arr = array('brown','ë¸Œë¼ìš´');
 	unset($arr[0]);
-	echo $arr[0] . $arr[1];//ºê¶ó¿îÀÌ Ãâ·ÂµÊ
+	echo $arr[0] . $arr[1];//ë¸Œë¼ìš´ì´ ì¶œë ¥ë¨
  ?>

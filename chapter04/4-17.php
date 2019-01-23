@@ -1,4 +1,4 @@
-<?
+<?php
 	$array = file('somefile.txt');
 
 	foreach ($array as $line_num => $line) {

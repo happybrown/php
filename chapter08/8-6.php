@@ -1,4 +1,4 @@
-<?
+<?php
 if (!isset($_SERVER['PHP_AUTH_USER']) || $_COOKIE['login'] != "1") {
 
 	//웹 브라우저의 헤더로 전송

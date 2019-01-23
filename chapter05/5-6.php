@@ -1,4 +1,4 @@
-<?
+<?php
 	$arr = array('name'=>'brown', 'age'=>29, 'sex'=>'male');
 
 	echo "<pre>";

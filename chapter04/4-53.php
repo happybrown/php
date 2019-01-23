@@ -1,5 +1,5 @@
-<?
+<?php
 	$email = 'happybrown@naver.com';
 	$domain = strstr($email, '@');
-	echo $domain; //@naver.comÀÌ Ãâ·ÂµÊ
+	echo $domain; //@naver.comì´ ì¶œë ¥ë¨
 ?>

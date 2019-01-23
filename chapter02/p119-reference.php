@@ -1,4 +1,4 @@
-<?
+<?php
 	function swap(&$a, &$b)
 	{
 		$c = $a;

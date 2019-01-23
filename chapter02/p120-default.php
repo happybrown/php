@@ -1,4 +1,4 @@
-<?
+<?php
 	function ezphp_net ($url = "http://ezphp.net")
 	{
 		return "홈페이지 주소 : $url<BR>";

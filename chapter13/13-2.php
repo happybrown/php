@@ -1,4 +1,4 @@
-<?
+<?php
 	echo "파일명 : " . $_FILES['upfile']['name'] . "<BR>";
 	echo "MIME : " . $_FILES['upfile']['type'] . "<BR>";
 	echo "파일 크기 : " . $_FILES['upfile']['size'] . "<BR>";

@@ -1,7 +1,7 @@
-<?
+<?php
 	$str = 'abcdef';
-	echo "'{$str}'ÀÇ ±æÀÌ : " . strlen($str) . "<BR>";
+	echo "'{$str}'ì˜ ê¸¸ì´ : " . strlen($str) . "<BR>";
 
-	$str = '°¡³ª´Ù ¶ó¸¶';
-	echo "'{$str}'ÀÇ ±æÀÌ : " . strlen($str) . "<BR>";
+	$str = 'ê°€ë‚˜ë‹¤ ë¼ë§ˆ';
+	echo "'{$str}'ì˜ ê¸¸ì´ : " . strlen($str) . "<BR>";
 ?>

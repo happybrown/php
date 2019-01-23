@@ -1,4 +1,4 @@
-<?
+<?php
 include_once "library.php";
 
 //입력값 검증
@@ -22,4 +22,4 @@ else
 	ErrorMessage('비밀번호가 틀립니다.');
 }
 ?>
-<meta http-equiv='Refresh' content='0; URL=read.php?id=<?=$_GET[bid]?>'>
+<meta http-equiv='Refresh' content='0; URL=read.php?id=<?php=$_GET[bid]?>'>

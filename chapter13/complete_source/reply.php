@@ -1,4 +1,4 @@
-<? 
+<?php 
 	include "db_info.php";
 
 	$id = (int)$_GET[id];
@@ -60,8 +60,8 @@ A:hover { text-decoration : underline; color : black; font-size : 9pt; }
 
 <!-- 입력된 값을 다음 페이지로 넘기기 위해 FORM을 만든다. -->
 <form action=insert_reply.php method=post name=fm onsubmit="return FormCheck()">
-<input type=hidden name=parent_depth value=<?=$parent_row[depth]?>>
-<input type=hidden name=parent_thread value=<?=$parent_row[thread]?>>
+<input type=hidden name=parent_depth value=<?php=$parent_row[depth]?>>
+<input type=hidden name=parent_thread value=<?php=$parent_row[thread]?>>
 
 <table width=580 border=0 cellpadding=2 cellspacing=1 bgcolor=#777777>
 <tr>
@@ -95,13 +95,13 @@ A:hover { text-decoration : underline; color : black; font-size : 9pt; }
 <tr>
 <td width=60 align=left >제 목</td>
 <td align=left >
-<INPUT type=text name=title size=60 maxlength=35 value="<?=$parent_title?>">
+<INPUT type=text name=title size=60 maxlength=35 value="<?php=$parent_title?>">
 </td>
 </tr>
 <tr>
 <td width=60 align=left >내용</td>
 <td align=left >
-<TEXTAREA name=content cols=65 rows=15><?=$parent_content?></TEXTAREA>
+<TEXTAREA name=content cols=65 rows=15><?php=$parent_content?></TEXTAREA>
 </td>
 </tr>
 <tr>

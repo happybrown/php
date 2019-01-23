@@ -1,6 +1,6 @@
-<?
-	$subject = "Ã¥ Á¤¸» ÁÁ±º¿ä.";
-	$message = "¶ó¸é ¹ÞÄ§´ë·Î ¾²±â¿¡...";
+<?php
+	$subject = "ì±… ì •ë§ ì¢‹êµ°ìš”.";
+	$message = "ë¼ë©´ ë°›ì¹¨ëŒ€ë¡œ ì“°ê¸°ì—...";
 
 	$to = "moratorium@gmail.com";
 	$from = "your@mail.com";

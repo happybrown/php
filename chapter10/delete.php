@@ -1,10 +1,10 @@
-<?
+<?php
 	if ($_GET['mode']!="delete")
 	{
 ?>
 <HTML>
 <FORM METHOD="POST" 
-ACTION="<?=$_SERVER['PHP_SELF']?>?id=<?=$_GET[id]?>&mode=delete">
+ACTION="<?php=$_SERVER['PHP_SELF']?>?id=<?php=$_GET[id]?>&mode=delete">
 <TABLE>
 	<TR>
 		<TD>비밀번호</TD>
@@ -12,7 +12,7 @@ ACTION="<?=$_SERVER['PHP_SELF']?>?id=<?=$_GET[id]?>&mode=delete">
 		<TD><INPUT TYPE="SUBMIT" VALUE=" 확 인 "></TD>
 	</TR>
 </TABLE>
-<?
+<?php
 		exit;
 	} //end if
 

@@ -1,9 +1,8 @@
-<?
+<?php
 	$_FILES['userfile']['tmp_name']= "somefile.txt";
-
 	if (is_uploaded_file($_FILES['userfile']['tmp_name'])) {
-		echo $_FILES['userfile']['tmp_name']." ÆÄÀÏÀÌ ¾÷·Îµå µÇ¾ú½À´Ï´Ù.";
+		echo $_FILES['userfile']['tmp_name']." íŒŒì¼ì´ ì—…ë¡œë“œ ë˜ì—ˆìŠµë‹ˆë‹¤.";
 	} else {
-		echo $_FILES['userfile']['tmp_name']." ÆÄÀÏÀº ¾÷·ÎµåµÈ ÆÄÀÏÀÌ ¾Æ´Õ´Ï´Ù.";
+		echo $_FILES['userfile']['tmp_name']." íŒŒì¼ì€ ì—…ë¡œë“œëœ íŒŒì¼ì´ ì•„ë‹™ë‹ˆë‹¤.";
 	}
 ?>

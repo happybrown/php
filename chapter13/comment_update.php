@@ -1,4 +1,4 @@
-<?
+<?php
 include_once "library.php";
 
 $_POST[name] = trim(strip_tags($_POST[name]));

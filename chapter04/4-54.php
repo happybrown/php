@@ -1,4 +1,4 @@
-<?
+<?php
 	echo substr ("abcdef", 1); // bcdef
 	echo substr ("abcdef", 1, 3); // bcd
 

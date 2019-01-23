@@ -1,5 +1,5 @@
-<?
-	// microtime(TRUE)ÀÇ ¿ªÇÒÀ» ÇÏ´Â ÇÔ¼ö
+<?php
+	// microtime(TRUE)ì˜ ì—­í• ì„ í•˜ëŠ” í•¨ìˆ˜
 	function microtime_float()
 	{
 		list($usec, $sec) = explode(" ", microtime());
@@ -15,6 +15,6 @@
 
 	$end_time = microtime_float();
 
-	echo "ÇÕ : $sum <BR>";
-	echo "ÃÑ ¼Ò¿ä½Ã°£ : " . ($end_time - $start_time);
+	echo "í•© : $sum <BR>";
+	echo "ì´ ì†Œìš”ì‹œê°„ : " . ($end_time - $start_time);
 ?>

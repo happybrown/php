@@ -1,4 +1,4 @@
-<?
+<?php
 	/* Human 클래스를 여기에 삽입 */
 	include "p247-human-php5.php";
 

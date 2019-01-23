@@ -1,6 +1,6 @@
-<?
+<?php
 	$christmas = "2007-12-25";
 
 	$date = sscanf($christmas, "%d-%d-%d", &$year, &$month, &$day);
-	echo "{$year}³â {$month}¿ù {$day}ÀÏÀº Å©¸®½º¸¶½ºÀÔ´Ï´Ù.";
+	echo "{$year}ë…„ {$month}ì›” {$day}ì¼ì€ í¬ë¦¬ìŠ¤ë§ˆìŠ¤ìž…ë‹ˆë‹¤.";
 ?>

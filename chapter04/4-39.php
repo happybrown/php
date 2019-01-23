@@ -1,6 +1,6 @@
-<?
-	$nickname_array = array('Á¶¸íÁø','ºê¶ó¿î','´Ù¿ì´Ï','brown',
-	'Çàº¹ÇÑºê¶ó¿î','happybrown');
+<?php
+	$nickname_array = array('ì¡°ëª…ì§„','ë¸Œë¼ìš´','ë‹¤ìš°ë‹ˆ','brown',
+	'í–‰ë³µí•œë¸Œë¼ìš´','happybrown');
 
 	$nickname = implode(",", $nickname_array);
 	echo $nickname;

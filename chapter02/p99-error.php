@@ -1,1 +1,1 @@
-<? @include "a.php"; ?>
+<?php @include "a.php"; ?>

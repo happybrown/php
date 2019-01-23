@@ -1,4 +1,4 @@
-<?
+<?php
 	$conn = mysql_connect("localhost", "사용자아이디", "비밀번호") or die(mysql_error());
 	@mysql_select_db("데이터베이스이름", $conn);
 	mysql_query("set names euckr");
@@ -25,7 +25,7 @@
 </TABLE>
 </FORM>
 <BR>
-<?
+<?php
 	for($i=$_GET[no] ; $i < $_GET[no]+$pagesize ; $i++) {
 
 		if ($i < $total)
@@ -35,16 +35,16 @@
 ?>
 <TABLE WIDTH=500 BORDER=1>
 	<TR>
-		<TD>No. <?=$row[id]?></TD>
-		<TD><?=$row[name]?></TD>
-		<TD>(<?=$row[wdate]?>)</TD>
-		<TD><a href="delete.php?id=<?=$row[id]?>">del</a></TD>
+		<TD>No. <?php=$row[id]?></TD>
+		<TD><?php=$row[name]?></TD>
+		<TD>(<?php=$row[wdate]?>)</TD>
+		<TD><a href="delete.php?id=<?php=$row[id]?>">del</a></TD>
 	</TR>
 	<TR>
-		<TD COLSPAN=4><?=$row[content]?></TD>
+		<TD COLSPAN=4><?php=$row[content]?></TD>
 	</TR>
 </TABLE>
-<?
+<?php
 		} //end if
 	} //end for
 

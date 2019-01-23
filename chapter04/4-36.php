@@ -1,5 +1,5 @@
-<?
-	$nickname = "Á¶¸íÁø|ºê¶ó¿î|´Ù¿ì´Ï|brown|Çàº¹ÇÑºê¶ó¿î|happybrown";
+<?php
+	$nickname = "ì¡°ëª…ì§„|ë¸Œë¼ìš´|ë‹¤ìš°ë‹ˆ|brown|í–‰ë³µí•œë¸Œë¼ìš´|happybrown";
 	$nickname_array = explode("|", $nickname);
 
 	echo "<PRE>";

@@ -1,4 +1,4 @@
-<?
-	$text = 'Çàº¹ÇÑ ºê¶ó¿î';
+<?php
+	$text = 'í–‰ë³µí•œ ë¸Œë¼ìš´';
 	echo base64_encode($text); //x+C6ucfRILrqtvO/7g==
 ?>

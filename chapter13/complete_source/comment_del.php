@@ -1,4 +1,4 @@
-<?
+<?php
 
 include_once "library.php";
 
@@ -24,4 +24,4 @@ $row=mysql_fetch_array($result);
 }
 ?>
 
-<meta http-equiv='Refresh' content='0; URL=read.php?id=<?=$_GET[bid]?>'>
+<meta http-equiv='Refresh' content='0; URL=read.php?id=<?php=$_GET[bid]?>'>

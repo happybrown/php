@@ -1,8 +1,6 @@
-<?
+<?php
 	$handle = fopen("/home/httpd/file.txt", "w");
-
-	$string = "³ú¸¦ ÀÚ±ØÇÏ´Â PHP ÇÁ·Î±×·¡¹Ö";
+	$string = "ë‡Œë¥¼ ìžê·¹í•˜ëŠ” PHP í”„ë¡œê·¸ëž˜ë°";
 	fwrite($handle, $string);
-
 	fclose($handle);
 ?>

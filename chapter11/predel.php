@@ -16,7 +16,7 @@ font-size : 9pt;}
 <center>
 <BR>
 <!-- 입력된 값을 다음 페이지로 넘기기 위해 FORM을 만든다. -->
-<form action=del.php?id=<?=$id?> method=post>
+<form action=del.php?id=<?php=$id?> method=post>
 <table width=300 border=0 cellpadding=2 cellspacing=1
 bgcolor=#777777>
 <tr>

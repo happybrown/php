@@ -1,4 +1,4 @@
-<?
+<?php
 	$math = 85;
 
 	if ( $math >= 90 ) echo "수";

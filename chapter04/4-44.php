@@ -1,15 +1,15 @@
-<?
+<?php
 	$float = 12.345;
 
-	printf("Á¤¼ö : %d <BR>", $float);
-	printf("Á¤¼ö : %03d <BR>", $float);
+	printf("ì •ìˆ˜ : %d <BR>", $float);
+	printf("ì •ìˆ˜ : %03d <BR>", $float);
 
-	printf("½Ç¼ö : %f <BR>", $float);
-	printf("½Ç¼ö : %.2f <BR>", $float);
+	printf("ì‹¤ìˆ˜ : %f <BR>", $float);
+	printf("ì‹¤ìˆ˜ : %.2f <BR>", $float);
 
-	printf("2Áø¼ö Á¤¼ö : %b <BR>", $float);
-	printf("8Áø¼ö Á¤¼ö : %o <BR>", $float);
-	printf("16Áø¼ö Á¤¼ö : %x <BR>", $float);
+	printf("2ì§„ìˆ˜ ì •ìˆ˜ : %b <BR>", $float);
+	printf("8ì§„ìˆ˜ ì •ìˆ˜ : %o <BR>", $float);
+	printf("16ì§„ìˆ˜ ì •ìˆ˜ : %x <BR>", $float);
 
 	printf("%d + %d = %d", 1, 2, 1+2);
 ?>

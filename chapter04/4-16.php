@@ -1,4 +1,4 @@
-<?
+<?php
 	$filename = 'somefile.txt';
 
 	if (file_exists($filename)) {

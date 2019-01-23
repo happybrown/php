@@ -1,4 +1,4 @@
-<?
+<?php
 	$fruits = array ('a'=>"lemon", 'b'=>"orange", "banana", "apple");
 	asort ($fruits);
 	echo "<pre>";

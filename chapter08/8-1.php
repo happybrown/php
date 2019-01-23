@@ -1,4 +1,4 @@
-<?
+<?php
 	//인증이 되어 있지 않은 경우
 	if (!$_SERVER['PHP_AUTH_USER'])
 	{

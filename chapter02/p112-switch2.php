@@ -1,4 +1,4 @@
-<?
+<?php
 	$choice = 4;
 	switch ($choice) {
 		case 1:

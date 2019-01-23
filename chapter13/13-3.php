@@ -1,4 +1,4 @@
-<?
+<?php
 	if (empty($_FILES['upfile']['name']))
 	{
 		echo "업로드된 파일이 없습니다.";

@@ -1,9 +1,9 @@
-<?
+<?php
 	$file = "test.php";
 
 	if (copy($file, $file.'.bak')) {
-		echo "$fileÀ» º¹»çÇÏ¿´½À´Ï´Ù...<br>\n";
+		echo "$fileì„ ë³µì‚¬í•˜ì˜€ìŠµë‹ˆë‹¤...<br>\n";
 	} else {
-		echo "$fileÀ» º¹»çÇÏ´Âµ¥ ½ÇÆÐÇß½À´Ï´Ù...<br>\n";
+		echo "$fileì„ ë³µì‚¬í•˜ëŠ”ë° ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤...<br>\n";
 	}
 ?>

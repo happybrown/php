@@ -1,4 +1,4 @@
-<?
+<?php
 	$path = "/home/httpd/html/index.php";
 
 	echo basename ($path) . "<BR>";

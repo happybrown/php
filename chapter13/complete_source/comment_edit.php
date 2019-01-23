@@ -31,8 +31,8 @@ A:hover { text-decoration : underline; color : black; font-size : 9pt; }
 
 <table width=600 align=center border=0 cellpadding=5 cellspacing=0>
 <form name=comment_update method=post action='comment_update.php' onsubmit="return CommentFormCheck()">
-<input type=hidden name=id value='<?=$_GET[id]?>'>
-<input type=hidden name=bid value='<?=$_GET[bid]?>'>
+<input type=hidden name=id value='<?php=$_GET[id]?>'>
+<input type=hidden name=bid value='<?php=$_GET[bid]?>'>
 	<tr bgcolor=#CCCCCC><td colspan=4></td></tr>
 	<tr bgcolor=#F0F0F0>
 		<td width=50 align=center>이름</td><td width=100><input type=text name=name size=15></td>

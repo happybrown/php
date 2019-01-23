@@ -1,4 +1,4 @@
-<?
+<?php
 //데이터 베이스 연결하기
 include "db_info.php";
 

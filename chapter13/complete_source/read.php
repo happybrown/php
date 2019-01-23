@@ -1,4 +1,4 @@
-<?
+<?php
 //데이터 베이스 연결하기
 include "db_info.php";
 include_once "library.php";
@@ -34,30 +34,30 @@ A:hover { text-decoration : underline; color : black; font-size : 9pt; }
 <table width=600 border=0 cellpadding=2 cellspacing=1 bgcolor=#777777 style="table-layout:fixed;">
 <tr>
 <td height=20 colspan=4 align=center bgcolor=#999999>
-<font color=white><B><?=remove_html($row[title]);?></B></font>
+<font color=white><B><?php=remove_html($row[title]);?></B></font>
 </td>
 </tr>
 <tr>
-<td width=50 height=20 align=center bgcolor=#EEEEEE>글쓴이</td><td width=240 bgcolor=white><?=$row[name]?></td>
-<td width=50 height=20 align=center bgcolor=#EEEEEE>이메일</td><td width=240 bgcolor=white><?=$row[email]?></td>
+<td width=50 height=20 align=center bgcolor=#EEEEEE>글쓴이</td><td width=240 bgcolor=white><?php=$row[name]?></td>
+<td width=50 height=20 align=center bgcolor=#EEEEEE>이메일</td><td width=240 bgcolor=white><?php=$row[email]?></td>
 </tr>
 <tr>
-<td width=50 height=20 align=center bgcolor=#EEEEEE>날&nbsp;&nbsp;&nbsp;짜</td><td width=240 bgcolor=white><?=date("Y-m-d",$row[wdate])?></td>
-<td width=50 height=20 align=center bgcolor=#EEEEEE>조회수</td><td width=240 bgcolor=white><?=$row[view]?></td>
+<td width=50 height=20 align=center bgcolor=#EEEEEE>날&nbsp;&nbsp;&nbsp;짜</td><td width=240 bgcolor=white><?php=date("Y-m-d",$row[wdate])?></td>
+<td width=50 height=20 align=center bgcolor=#EEEEEE>조회수</td><td width=240 bgcolor=white><?php=$row[view]?></td>
 </tr>
 <tr>
 <td bgcolor=white colspan=4 style="word-break:break-all;">
 <BR>
 <font color=black>
-<?
+<?php
 	if ($row[filename]) {
 		echo "첨부된 파일 : <a href='uploads_dir/$row[filename]'>$row[filename]</a><BR><BR>";
 	}
 ?>
-<?=nl2br(str_replace(" ", "&nbsp;", remove_html($row[content])));?>
+<?php=nl2br(str_replace(" ", "&nbsp;", remove_html($row[content])));?>
 </font>
         <BR><BR>
-        <? include "comment.php"; ?>
+        <?php include "comment.php"; ?>
 
 </td> 
 </tr>
@@ -67,11 +67,11 @@ A:hover { text-decoration : underline; color : black; font-size : 9pt; }
 <table width=100%>
 <tr>
 <td width=280 align=left height=20>
-<a href=list.php?no=<?=$no?>><font color=white>[목록보기]</font></a>
-<a href=reply.php?id=<?=$id?>><font color=white>[답글달기]</font></a>
+<a href=list.php?no=<?php=$no?>><font color=white>[목록보기]</font></a>
+<a href=reply.php?id=<?php=$id?>><font color=white>[답글달기]</font></a>
 <a href=write.php><font color=white>[글쓰기]</font></a>
-<a href=edit.php?id=<?=$id?>><font color=white>[수정]</font></a>
-<a href=predel.php?id=<?=$id?>><font color=white>[삭제]</font></a>
+<a href=edit.php?id=<?php=$id?>><font color=white>[수정]</font></a>
+<a href=predel.php?id=<?php=$id?>><font color=white>[삭제]</font></a>
 </td>
 </tr>
 </table>
@@ -80,7 +80,7 @@ A:hover { text-decoration : underline; color : black; font-size : 9pt; }
 </table>
 
 <table  width=580 bgcolor=white style="border-bottom-width:1; border-bottom-style:solid;border-bottom-color:cccccc;">
-<?
+<?php
 // 현재 글보다 thread 값이 큰 글 중 가장 작은 것의 id를 가져온다.
 $query=mysql_query("select id, name, title from $board where thread < $row[thread] and depth=0 order by thread desc limit 1", $conn);
 $up_id=mysql_fetch_array($query);
@@ -103,7 +103,7 @@ echo "<a href=read.php?id=$down_id[id]>▽ " . remove_html($down_id[title]) . "<
 ?>
 </table>
 <BR>
-<?
+<?php
 //리스트 출력을 위해 thread를 계산한다.
 //출력될 리스트는 글 전체 리스트가 아니라
 //1000의 배수인 새글과 이를 포함한 답변글들의 리스트이다.
@@ -138,7 +138,7 @@ $result = mysql_query($query, $conn);
 </tr>
 <!-- 리스트 타이틀 끝 -->
 <!-- 리스트 부분 시작 -->
-<?
+<?php
 while($row=mysql_fetch_array($result))
 {
 
@@ -147,36 +147,36 @@ while($row=mysql_fetch_array($result))
 <tr>
 <!-- 번호 -->
 <td height=20 bgcolor=white align=center>
-<a href=read.php?id=<?=$row[id]?>&no=<?=$no?>><?=$row[id]?></a>
+<a href=read.php?id=<?php=$row[id]?>&no=<?php=$no?>><?php=$row[id]?></a>
 </td>
 <!-- 번호 끝 -->
 <!-- 제목 -->
 <td height=20 bgcolor=white>&nbsp;
-<? //depth 값을 통해서 들여쓰기를 한다. 투명이미지의 가로사이즈를 늘이는 방법
+<?php //depth 값을 통해서 들여쓰기를 한다. 투명이미지의 가로사이즈를 늘이는 방법
 if ($row[depth] > 0) echo "<img src=img/dot.gif height=1 width=" . $row[depth]*7 . ">└";
-?><a href=read.php?id=<?=$row[id]?>&no=<?=$no?>><?=remove_html($row[title]);?></a>
+?><a href=read.php?id=<?php=$row[id]?>&no=<?php=$no?>><?php=remove_html($row[title]);?></a>
 </td>
 <!-- 제목 끝 -->
 <!-- 이름 -->
 <td align=center height=20 bgcolor=white>
 <font color=black>
-<a href="mailto:<?=$row[email]?>"><?=$row[name]?></a>
+<a href="mailto:<?php=$row[email]?>"><?php=$row[name]?></a>
 </font>
 </td>
 <!-- 이름 끝 -->
 <!-- 날짜 -->
 <td align=center height=20 bgcolor=white>
-<font color=black><?=date("Y-m-d",$row[wdate])?></font>
+<font color=black><?php=date("Y-m-d",$row[wdate])?></font>
 </td>
 <!-- 날짜 끝 -->
 <!-- 조회수 -->
 <td align=center height=20 bgcolor=white>
-<font color=black><?=$row[view]?></font>
+<font color=black><?php=$row[view]?></font>
 </td>
 <!-- 조회수 끝 -->
 </tr>
 <!-- 행 끝 -->
-<?
+<?php
 } // end While
 mysql_close($conn);
 ?>

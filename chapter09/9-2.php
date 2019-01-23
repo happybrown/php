@@ -1,4 +1,4 @@
-<?
+<?php
 	$count=file("count.txt");// 파일에서 총 방문자 수를 읽어옴 
 	$count=trim($count[0]); // 가져온 값에서 빈 공간을 없앰 
 	

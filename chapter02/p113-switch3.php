@@ -1,4 +1,4 @@
-<?
+<?php
 $city = "수원";
 switch ($city) {
 	case "수원":

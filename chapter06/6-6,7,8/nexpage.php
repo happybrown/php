@@ -1,4 +1,4 @@
-<?
+<?php
 	session_start();
 	$_SESSION['message'] = 'Welcome to PHP world!<BR>';
 ?>

@@ -1,4 +1,4 @@
-<?
+<?php
 	$start_time = microtime(TRUE);
 	$sum = 0;
 	
@@ -8,6 +8,6 @@
 
 	$end_time = microtime(TRUE);
 
-	echo "ÇÕ : $sum <BR>";
-	echo "ÃÑ ¼Ò¿ä½Ã°£ : " . ($end_time - $start_time);
+	echo "í•© : $sum <BR>";
+	echo "ì´ ì†Œìš”ì‹œê°„ : " . ($end_time - $start_time);
 ?>

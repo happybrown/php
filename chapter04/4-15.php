@@ -1,4 +1,4 @@
-<?
+<?php
 	$handle = @fopen("somefile.txt", "r");
 
 	if ($handle) {

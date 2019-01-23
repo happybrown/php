@@ -1,4 +1,4 @@
-<?
+<?php
 	$conn = mysql_connect("localhost", "사용자아이디", "비밀번호") or die(mysql_error());
 	@mysql_select_db("데이터베이스이름", $conn);
 	mysql_query("set names euckr");

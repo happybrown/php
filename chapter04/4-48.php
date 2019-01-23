@@ -1,5 +1,5 @@
-<?
-	$html = "<font color='%font_color%'>Α¶ΈνΑψ</font>";
+<?php
+	$html = "<font color='%font_color%'>μ΅°λª…μ§„</font>";
 	$html = str_replace("%font_color%", "blue", $html);
 	echo $html;
 ?>
